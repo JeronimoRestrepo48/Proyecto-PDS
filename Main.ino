@@ -38,9 +38,26 @@ void loop() {
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de verduras
     Serial.println("Recomendar siembra de verduras");
-  } else {
+  } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
+    // Recomendar siembra de flores
+    Serial.println("Recomendar siembra de flores");
+  } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 22 && temperature <= 30 && humidity >= 60 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
+    // Recomendar siembra de hortalizas
+    Serial.println("Recomendar siembra de hortalizas");
+  } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
+    // Recomendar siembra de hierbas
+    Serial.println("Recomendar siembra de hierbas");
+  } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 28 && humidity >= 60 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
+    // Recomendar siembra de legumbres
+    Serial.println("Recomendar siembra de legumbres");
+  } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 18 && temperature <= 25 && humidity >= 70 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
+    // Recomendar siembra de tubérculos
+    Serial.println("Recomendar siembra de tubérculos");
+  } // Añadir más condiciones para otros tipos de cultivos aquí
+  else {
     // No recomendar siembra de cultivos
     Serial.println("No recomendar siembra de cultivos");
   }
+
   delay(1000);
 }
