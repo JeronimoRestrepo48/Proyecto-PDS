@@ -1,3 +1,4 @@
+import processing.core.PFont;
 import processing.serial.*;
 import java.awt.Font;
 
@@ -7,6 +8,7 @@ PrintWriter output;
 String ssid = "your_SSID";
 String password = "your_PASSWORD";
 
+int SERIAL_PORT_BAUD_RATE = 115200;
 int sensorValue = 0;
 int pH = 0;
 int temperature = 0;
@@ -54,7 +56,8 @@ String[] cropRecommendations = {
 
 int cropIndex = 0;
 
-Font font;
+PFont font;
+Serial arduino; 
 
 int x = 50;
 int y = 100;
@@ -77,8 +80,7 @@ Boolean updateInterface = false;
 
 void setup() {
   size(800, 600);
-  myPort = new Serial(this, Serial.list()[0], 115200);
-  Serial.begin(115200);
+  myPort = new Serial(this, Serial.list()[0], SERIAL_PORT_BAUD_RATE);
   output = createWriter("data.txt");
   font = createFont("Arial", 16);
   textFont(font);
