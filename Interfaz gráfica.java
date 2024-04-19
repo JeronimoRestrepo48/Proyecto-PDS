@@ -1,6 +1,5 @@
 import processing.core.PFont;
 import processing.serial.*;
-import java.awt.Font;
 
 Serial myPort;
 String inputString = "";
