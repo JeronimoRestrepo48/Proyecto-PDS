@@ -18,109 +18,108 @@ int altitude = 0;
 // Análisis de datos
   if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de frutas
-    Serial.println("Recomendar siembra de frutas");
+    Serial.println(cropRecommendations[0]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de verduras
-    Serial.println("Recomendar siembra de verduras");
+    Serial.println(cropRecommendations[1]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 15 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 950 && pressure <= 1020) {
     // Recomendar siembra de flores
-    Serial.println("Recomendar siembra de flores");
+    Serial.println(cropRecommendations[2]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 18 && temperature <= 25 && humidity >= 70 && humidity <= 90 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hortalizas
-    Serial.println("Recomendar siembra de hortalizas");
+    Serial.println(cropRecommendations[3]);
   } else if (pH >= 5.0 && pH <= 6.0 && temperature >= 25 && temperature <= 35 && humidity >= 60 && humidity <= 80 && pressure >= 950 && pressure <= 1020) {
     // Recomendar siembra de cítricos
-    Serial.println("Recomendar siembra de cítricos");
+    Serial.println(cropRecommendations[4]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hortalizas de hoja
-    Serial.println("Recomendar siembra de hortalizas de hoja");
+    Serial.println(cropRecommendations[5]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de legumbres
-    Serial.println("Recomendar siembra de legumbres");
+    Serial.println(cropRecommendations[6]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 22 && temperature <= 28 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hortalizas de raíz
-    Serial.println("Recomendar siembra de hortalizas de raíz");
+    Serial.println(cropRecommendations[7]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hierbas aromáticas
-    Serial.println("Recomendar siembra de hierbas aromáticas");
+    Serial.println(cropRecommendations[8]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de tubérculos
-    Serial.println("Recomendar siembra de tubérculos");
+    Serial.println(cropRecommendations[9]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 18 && temperature <= 25 && humidity >= 70 && humidity <= 90 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de árboles frutales
-    Serial.println("Recomendar siembra de árboles frutales");
+    Serial.println(cropRecommendations[10]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de frutos secos
-    Serial.println("Recomendar siembra de frutos secos");
+    Serial.println(cropRecommendations[11]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de especias
-    Serial.println("Recomendar siembra de especias");
+    Serial.println(cropRecommendations[12]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas medicinales
-    Serial.println("Recomendar siembra de plantas medicinales");
+    Serial.println(cropRecommendations[13]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 70 && humidity <= 90 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas tropicales
-    Serial.println("Recomendar siembra de plantas tropicales");
+    Serial.println(cropRecommendations[14]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de bayas
-    Serial.println("Recomendar siembra de bayas");
+    Serial.println(cropRecommendations[15]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de frutos exóticos
-    Serial.println("Recomendar siembra de frutos exóticos");
+    Serial.println(cropRecommendations[16]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 22 && temperature <= 28 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hortalizas de bulbo
-    Serial.println("Recomendar siembra de hortalizas de bulbo");
+    Serial.println(cropRecommendations[17]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de hortalizas de tallo
-    Serial.println("Recomendar siembra de hortalizas de tallo");
+    Serial.println(cropRecommendations[18]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de granos
-    Serial.println("Recomendar siembra de granos");
+    Serial.println(cropRecommendations[19]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas ornamentales
-    Serial.println("Recomendar siembra de plantas ornamentales");
+    Serial.println(cropRecommendations[20]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 70 && humidity <= 90 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de árboles ornamentales
-    Serial.println("Recomendar siembra de árboles ornamentales");
+    Serial.println(cropRecommendations[21]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de sombra
-    Serial.println("Recomendar siembra de plantas de sombra");
+    Serial.println(cropRecommendations[22]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de sol
-    Serial.println("Recomendar siembra de plantas de sol");
+    Serial.println(cropRecommendations[23]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas acuáticas
-    Serial.println("Recomendar siembra de plantas acuáticas");
+    Serial.println(cropRecommendations[24]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de enredaderas
-    Serial.println("Recomendar siembra de enredaderas");
+    Serial.println(cropRecommendations[25]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 70 && humidity <= 90 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de interior
-    Serial.println("Recomendar siembra de plantas de interior");
+    Serial.println(cropRecommendations[26]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de arbustos
-    Serial.println("Recomendar siembra de arbustos");
+    Serial.println(cropRecommendations[27]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de árboles frutales enanos
-    Serial.println("Recomendar siembra de árboles frutales enanos");
+    Serial.println(cropRecommendations[28]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 22 && temperature <= 28 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de estación
-    Serial.println("Recomendar siembra de plantas de estación");
+    Serial.println(cropRecommendations[29]);
   } else if (pH >= 6.0 && pH <= 7.0 && temperature >= 20 && temperature <= 30 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de clima cálido
-    Serial.println("Recomendar siembra de plantas de clima cálido");
+    Serial.println(cropRecommendations[30]);
   } else if (pH >= 6.5 && pH <= 7.5 && temperature >= 20 && temperature <= 30 && humidity >= 50 && humidity <= 70 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de clima frío
-    Serial.println("Recomendar siembra de plantas de clima frío");
+    Serial.println(cropRecommendations[31]);
   } else if (pH >= 5.5 && pH <= 6.5 && temperature >= 18 && temperature <= 25 && humidity >= 60 && humidity <= 80 && pressure >= 980 && pressure <= 1020) {
     // Recomendar siembra de plantas de climas templados
-    Serial.println("Recomendar siembra de plantas de climas templados");
+    Serial.println(cropRecommendations[32]);
   } else {
     // No recomendar siembra de cultivos
-    Serial.println("No recomendar siembra de cultivos");
+    Serial.println(cropRecommendations[33]);
     // Fin Análisis de datos
-    
-String recommendation = "";
+
 String[] cropRecommendations = {
   "Recomendar siembra de frutas",
   "Recomendar siembra de verduras",
