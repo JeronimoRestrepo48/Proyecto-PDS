@@ -1,5 +1,6 @@
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
+#include "SPI.h"
 #include <Adafruit_BME280.h>
 #include <DHT.h>
 #include <WiFi.h>
@@ -7,10 +8,14 @@
 // Configuración de sensores y conexión Wi-Fi
 #define DHTPIN 4
 #define DHTTYPE DHT11
+#define BME_SCK 13 // Serial Clock
+#define BME_MISO 12 // Serial Data Out
+#define BME_MOSI 11 // Serial Data In
+#define BME_CS 10 // Chip Select
 DHT dht(DHTPIN, DHTTYPE);
-Adafruit_BME280 bme;
-const char* ssid = "your_SSID";
-const char* password = "your_PASSWORD";
+Adafruit_BME280 bme(BME_CS, BME_MOSI, BME_MISO, BME_SCK);
+const char* ssid = "paula angel";
+const char* password = "32184346";
 
 void setup() {
   Serial.begin(115200);
@@ -29,7 +34,6 @@ void loop() {
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
   float pressure = bme.readPressure() / 100.0F;
-  float altitude = bme.readAltitude(SEALEVELPRESSURE_HPA);
 
   // Enviar datos a Processing
   Serial.print("pH:");
@@ -40,8 +44,6 @@ void loop() {
   Serial.println(humidity);
   Serial.print("press:");
   Serial.println(pressure);
-  Serial.print("alt:");
-  Serial.println(altitude);
 
   delay(1000);
 }
